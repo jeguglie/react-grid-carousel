@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import Carousel from '../src/components/Carousel'
 import styled from 'styled-components'
-import { withKnobs, number, boolean } from '@storybook/addon-knobs'
+// import { withKnobs, number, boolean } from '@storybook/addon-knobs'
 
 const randomImageUrl = 'https://picsum.photos/800/600?random='
 
@@ -356,21 +356,21 @@ export const CustomProps = () => {
   )
 }
 
-export default {
-  title: 'Carousel',
-  component: Carousel,
-  decorators: [
-    withKnobs,
-    story => (
-      <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        {story()}
-        <span style={{ position: 'absolute', bottom: '0', right: '0' }}>
-          Photo source{' '}
-          <a href="https://picsum.photos/" rel="noreferrer noopener">
-            https://picsum.photos/
-          </a>
-        </span>
-      </div>
-    )
-  ]
-}
+// export default {
+//   title: 'Carousel',
+//   component: Carousel,
+//   decorators: [
+//     withKnobs,
+//     story => (
+//       <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+//         {story()}
+//         <span style={{ position: 'absolute', bottom: '0', right: '0' }}>
+//           Photo source{' '}
+//           <a href="https://picsum.photos/" rel="noreferrer noopener">
+//             https://picsum.photos/
+//           </a>
+//         </span>
+//       </div>
+//     )
+//   ]
+// }
