@@ -13,7 +13,7 @@ const Item = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 `
-
+n
 export const SingleColumn = () => {
   return (
     <Carousel cols={1} rows={1}>
